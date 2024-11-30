@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powering the Future: Smart Energy Management</title>
+    <style>
+        /* Basic Reset and Styling */
+        
+          body{
+    background-image: url(smart-energy-management-optimizing-energy-consumption-through-automation-solid-color-background_964851-80741.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+            *{margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .main-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+        .banner-content h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+        /* Real-Time Data Section */
+        .real-time-data {
+            padding: 50px;
+            text-align: center;
+        }
+        .real-time-data h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: white
+            
+        }
+        .data-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .data-box {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+        }
+        .data-box h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .data-value {
+            font-size: 2em;
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Smart Energy</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/Project.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/energysources.html">Energy Sources</a></li>
+                <li><a href="http://127.0.0.1:5500/benefits.html">Benefits</a></li>
+                <li><a href="http://127.0.0.1:5500/efficiency.html">Efficiency</a></li>
+                <li><a href="http://127.0.0.1:5500/faq.html">FAQs</a></li>
+                <li><a href="http://127.0.0.1:5500/CHEdonate.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main-banner" style="background-image: url('images/smart-energy-bg.jpg');">
+        <div class="banner-content">
+            <h1>Powering the Future</h1>
+            <p>Unlocking the Potential of Smart Energy Management for a Sustainable Tomorrow</p>
+            <button class="cta-button">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Real-Time Data Section -->
+    <section class="real-time-data">
+        <h2>Real-Time Energy Data</h2>
+        <div class="data-container">
+            <div class="data-box">
+                <h3>Energy Consumption</h3>
+                <div id="energy-consumption" class="data-value">Loading...</div>
+            </div>
+            <div class="data-box">
+                <h3>Energy Production</h3>
+                <div id="energy-production" class="data-value">Loading...</div>
+            </div>
+            <div class="data-box">
+                <h3>CO2 Emissions</h3>
+                <div id="co2-emissions" class="data-value">Loading...</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function generateRandomData(min, max) {
+            return (Math.random() * (max - min) + min).toFixed(2);
+        }
+
+        function updateRealTimeData() {
+            document.getElementById('energy-consumption').innerText = generateRandomData(100, 500) + ' kWh';
+            document.getElementById('energy-production').innerText = generateRandomData(200, 600) + ' kWh';
+            document.getElementById('co2-emissions').innerText = generateRandomData(50, 150) + ' kg';
+        }
+
+        setInterval(updateRealTimeData, 3000);  // Update every 3 seconds
+
+        window.onload = updateRealTimeData;  // Initial load
+    </script>
+
+</body>
+</html>

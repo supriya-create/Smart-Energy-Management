@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powering the Future: Smart Energy Management</title>
+    <style>
+        /* Basic Reset and Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header and Navbar Styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 50px;
+            background: linear-gradient(135deg, #64b3f4, #c2e9fb);
+            text-align: center;
+        }
+        .faq-section h2 {
+            font-size: 2.8em;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .faq-section p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #f5f5f5;
+        }
+        .faq-container {
+            max-width: 900px;
+            margin: auto;
+            text-align: left;
+        }
+        .faq-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item:hover {
+            background-color: #ffeb3b;
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .faq-item h3 {
+            font-size: 1.6em;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            font-size: 1em;
+            color: #555;
+            margin-top: 10px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            margin-top: 15px;
+        }
+        .faq-item.active .faq-icon::after {
+            content: "-";
+        }
+        .faq-icon::after {
+            content: "+";
+            font-size: 1.6em;
+            color: #ff4081;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        /* Responsive Design for FAQ */
+        @media (max-width: 768px) {
+            .faq-section h2 {
+                font-size: 2em;
+            }
+            .faq-item h3 {
+                font-size: 1.4em;
+            }
+            .faq-container {
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navbar -->
+    <header>
+        <div class="logo">Smart Energy</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/Project.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/energysources.html">Energy Sources</a></li>
+                <li><a href="http://127.0.0.1:5500/benefits.html">Benefits</a></li>
+                <li><a href="http://127.0.0.1:5500/efficiency.html">Efficiency</a></li>
+                <li><a href="http://127.0.0.1:5500/faq.html">FAQs</a></li>
+                <li><a href="http://127.0.0.1:5500/CHEdonate.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about smart energy management and how it can benefit you and the environment.</p>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>
+                    What is smart energy management?
+                    <span class="faq-icon"></span>
+                </h3>
+                <div class="faq-answer">Smart energy management refers to the use of technologies to monitor, control, and optimize energy usage. It helps reduce waste, lowers costs, and promotes energy efficiency.</div>
+            </div>
+            <div class="faq-item">
+                <h3>
+                    How can smart energy management save me money?
+                    <span class="faq-icon"></span>
+                </h3>
+                <div class="faq-answer">By optimizing energy usage and reducing waste, smart energy management systems can lower your energy bills. For example, automated thermostats adjust temperatures based on your needs, and smart plugs turn off appliances when not in use.</div>
+            </div>
+            <div class="faq-item">
+                <h3>
+                    Is smart energy management environmentally friendly?
+                    <span class="faq-icon"></span>
+                </h3>
+                <div class="faq-answer">Yes, smart energy management reduces unnecessary energy consumption, leading to lower carbon emissions. It supports sustainable practices by making energy use more efficient and minimizing environmental impact.</div>
+            </div>
+            <div class="faq-item">
+                <h3>
+                    Do I need special devices for smart energy management?
+                    <span class="faq-icon"></span>
+                </h3>
+                <div class="faq-answer">Special devices such as smart thermostats, energy monitors, and connected appliances can enhance energy management. Many can be controlled via mobile apps, making it easy to monitor and adjust settings remotely.</div>
+            </div>
+            <div class="faq-item">
+                <h3>
+                    Can businesses benefit from smart energy management?
+                    <span class="faq-icon"></span>
+                </h3>
+                <div class="faq-answer">Absolutely. Businesses can reduce operational costs by using energy more efficiently. Smart systems also provide valuable insights through data analytics, helping businesses optimize energy use for greater savings.</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
